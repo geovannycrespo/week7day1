@@ -1,0 +1,18 @@
+<button (click) = showFacts()>Show Fun Programming Facts</button>
+
+<ol class="noFacts">
+    <li>what are your favorite movies</li>
+   
+</ol>
+
+<!-- Form For Random Facts-->
+
+<form [formGroup] = "factCreator" (ngSubmit) ="onSubmit()">
+    <label>Author</label>
+    <input type="text" formControlName="authorName">
+    <label >Fav Movie</label>
+    <input type="text" formControlName="funFact">
+    <button tpye="submit">Submit Movie</button>
+    
+
+</form>
